@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Hover Underline</title>
+    <style>
+        a {
+            position: relative;
+            text-decoration: none;
+            color: black; /* Adjust the text color as needed */
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px; /* Adjust the underline height as needed */
+            display: block;
+            background: black; /* Adjust the underline color as needed */
+            transition: width 0.3s;
+            left: 0;
+            bottom: -2px; /* Adjust the position of the underline */
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Hover over this link</a>
+</body>
+</html>

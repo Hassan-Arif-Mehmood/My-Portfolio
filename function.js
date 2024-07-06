@@ -1,0 +1,1 @@
+document.querySelector('.cross').style.display= 'none';
